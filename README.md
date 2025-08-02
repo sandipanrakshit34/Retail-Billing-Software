@@ -2,7 +2,7 @@
 
 A **Full-Stack Retail Billing Software** built with **Spring Boot** (Backend) and **React.js + Bootstrap** (Frontend) tailored for small to mid-sized retail stores.
 
----
+--- 
 
 ## 📌 Table of Contents
 - [🧠 About the Project](#-about-the-project)
