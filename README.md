@@ -157,16 +157,14 @@ Auto-generated order receipt on successful payment with print option.
 
 ### 🧩 Frontend Setup (React)
 
-Open client folder in VS Code
-
-Update constants.js with your Razorpay key
-
-Run the React app:
- ```properties
-  npm install --save-dev ajv@^7
-  npm install
-  npm run dev
-```
+1. Open client folder in VS Code
+2. Update constants.js with your Razorpay key
+3. Run the React app:
+   ```properties
+   npm install --save-dev ajv@^7
+   npm install
+   npm run dev
+   ```
 ## 🔐 AWS & Razorpay Integration
 - AWS S3 is used to store images for products & categories
 - Razorpay is used for online UPI-based payment collection
