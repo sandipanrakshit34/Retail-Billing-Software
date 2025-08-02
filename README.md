@@ -157,24 +157,24 @@ Admins and Users have access to a complete order history log.
 ## 🛠️ Technologies Used
 
 ### 🔹 Frontend:
-- React.js
-- Bootstrap 5
-- Axios
+      - React.js
+      - Bootstrap 5
+      - Axios
 
 ### 🔹 Backend:
-- Spring Boot
-- JPA
-- MySQL
-- Maven
+      - Spring Boot
+      - JPA
+      - MySQL
+      - Maven
 
 ### 🔹 File Handling:
-- Local file system (for product/category image uploads)
+      - Local file system (for product/category image uploads)
 
 ### 🔹 Payments:
-- Razorpay (UPI integration)
+      - Razorpay (UPI integration)
 
 ### 🔹 Deployment:
-- AWS S3 (for media storage integration)
+      - AWS S3 (for media storage integration)
 
 ---
 
