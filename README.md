@@ -43,26 +43,35 @@ Retail stores often struggle with manual billing, inventory tracking, and mainta
 
 ### 1. 🔐 Login & Authentication
 
-![Login Page](screenshots/login.png)
-
 Secure login system for admin and employees.
 
+<div align="center"> <img src="Assets/display1.png" alt="Login Page" width="800" height="600"/> </div>
+
+- Admins and users (employees) can log in using secure credentials.
+- Access control is enforced using roles (ROLE_ADMIN and ROLE_USER).
+- Admin dashboard provides full access to all management features.
+- Users can only view and perform order-related operations as allowed.
+- Unauthorized users are redirected appropriately to login or error pages.
+- Passwords are securely hashed using BCrypt encryption.
+- Option to encode new passwords using a dedicated API endpoint (/api/v1.0/encode).
 ---
 
 ### 2. 📊 Dashboard with Sales Insights
 
-![Dashboard](screenshots/dashboard.png)
+Shows total sales of the day in real-time.
 
-- Total sales for the day
-- Number of orders
-- Order status (Pending / Completed)
-- Recent orders list
+<div align="center"> <img src="Assets/display2.png" alt="Login Page" width="800" height="600"/> </div>
+
+- Displays a list of recent orders with customer and payment details.
+- Highlights pending orders that are yet to be fulfilled.
+- Both admin and users can view the dashboard for operational updates.
+- Admins get additional analytics such as number of users and total inventory.
 
 ---
 
 ### 3. 🛒 Explore Products & Place Orders
 
-![Explore Section](screenshots/explore.png)
+<div align="center"> <img src="Assets/display3.png" alt="Login Page" width="800" height="600"/> </div>
 
 - View all available products
 - Filter by categories (Mouse, Keyboard, etc.)
@@ -75,46 +84,74 @@ Secure login system for admin and employees.
 
 ### 4. 🧾 Order Receipt Generation
 
-![Receipt](screenshots/receipt.png)
-
 Auto-generated order receipt on successful payment with print option.
+
+<div align="center"> <img src="Assets/display4.png" alt="Login Page" width="800" height="600"/> </div>
+
+- Generates digital invoice after every successful order.
+- Invoices include customer name, item details, prices, taxes, total amount, and payment mode.
+- Razorpay API integration allows secure UPI payments directly from the app.
+- Payment status is tracked and updated in real-time.
+- Invoice PDFs/images can be printed or saved for customer reference.
 
 ---
 
 ### 5. 📂 Manage Categories (Admin Only)
 
-![Manage Categories](screenshots/manage-categories.png)
+Admin can create new product categories with a custom name and description.
+
+<div align="center"> <img src="Assets/display5.png" alt="Login Page" width="800" height="600"/> </div>
 
 - Add / delete categories
 - Assign background color, image, description
-
+- Each category supports uploading a relevant image and background color.
+- Helps in organizing the shop’s products in a structured way.
+- Categories can be removed or updated as business needs evolve.
+- Makes product filtering easier for both users and customers.
 ---
 
 ### 6. 📦 Manage Products (Admin Only)
 
-![Manage Items](screenshots/manage-items.png)
+Admins can add items under specific categories (e.g., keyboards from multiple brands).
+
+<div align="center"> <img src="Assets/display6.png" alt="Login Page" width="800" height="600"/> </div>
 
 - Add / remove products under categories
 - Set product image, price, description, and name
-
+- Each product includes: image upload, name, description, and price.
+- Items can be edited or removed anytime from the catalog.
+- Inventory becomes visible instantly in the Explore section post addition.
+- Great for scaling with large inventories without UI slowdown.
 ---
 
 ### 7. 👥 Manage Users (Admin Only)
 
-![Manage Users](screenshots/manage-users.png)
+Admin can add new employees with name, email, and password.
+
+<div align="center"> <img src="Assets/display8.png" alt="Login Page" width="800" height="600"/> </div>
 
 - Add employees who can login and bill customers
 - Delete inactive users
+- Each user is assigned a role and saved securely in the database.
+- Existing users can be deleted when no longer needed.
+- Useful for branch-level operations where different users handle billing.
+- Ensures only authorized personnel can access the POS interface.
 
 ---
 
-### 8. 🧾 Order History (Admin Only)
+### 8. 🧾 Order History
 
-![Order History](screenshots/order-history.png)
+Admins and Users have access to a complete order history log.
+
+<div align="center"> <img src="Assets/display9.png" alt="Login Page" width="800" height="600"/> </div>
+
 
 - View all past orders
 - Includes customer name, phone, items, total, payment status & date
-
+- Displays key information: order ID, customer name, phone, items, total bill.
+- Tracks payment method (Cash/UPI) and payment status.
+- Shows order timestamp and delivery/processing status.
+- Useful for auditing, refund management, and sales reporting.
 ---
 
 ## 🛠️ Technologies Used
