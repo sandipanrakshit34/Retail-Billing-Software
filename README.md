@@ -182,8 +182,8 @@ Admins and Users have access to a complete order history log.
 
 ### 🧩 Backend Setup (Spring Boot)
 
-1. Open the project in IntelliJ IDEA
-2. Configure your `application.properties`:
+1. Open the backend folder (billingsoftware) in IntelliJ IDEA or preferred IDE
+2. Add your AWS & Razorpay keys in application.properties `application.properties`:
    ```properties
    aws.access.key=YOUR_AWS_KEY
    aws.secret.key=YOUR_SECRET_KEY
@@ -191,7 +191,32 @@ Admins and Users have access to a complete order history log.
    aws.bucket.name=billing-software-scbushan05
    razorpay.key=YOUR_RAZORPAY_KEY
    razorpay.secret=YOUR_RAZORPAY_SECRET
+   ```
+3. Create a database:
+   ```
+   CREATE DATABASE billing_app;
+   ```
+4. Start the Spring Boot app – tables will be auto-generated
 
+5. Insert an Admin manually:
+   ```
+   INSERT INTO tbl_users(name, email, password, role, created_at, updated_at, user_id)
+   VALUES(
+     'yourname',
+     'yourname@example.com',
+     '$2a$10$Jv28cuVrSxzPsZeujtM8F.aqV7aSlUDu05GhYzG/cbd1gtTNurQRe',  -- password: 123456
+     'ROLE_ADMIN',
+     current_timestamp(),
+     current_timestamp(),
+     uuid()
+   );
+   ```
+
+6. To create custom passwords, use:
+   ```
+   http://localhost:8080/api/v1.0/encode
+   ```
+   
 ### 🧩 Frontend Setup (React)
 
 1. Open client folder in VS Code
