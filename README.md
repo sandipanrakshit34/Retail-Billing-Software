@@ -1,6 +1,6 @@
-# 🧾 Retail Billing Software
+# 🧾 RetailPro: Full-Stack Billing & POS System for Retail Stores
 
-A **Full-Stack Retail Billing Software** built with **Spring Boot** (Backend) and **React.js + Bootstrap** (Frontend) tailored for small to mid-sized retail stores. 
+A full-stack billing software solution built using **Spring Boot** for the **backend** and **React.js** with **Bootstrap** for the **frontend**. Designed specifically for small to mid-sized retail stores, it offers real-time **sales tracking, UPI payment integration via Razorpay, admin-controlled product and user management, and AWS integration for media storage**.
 
 --- 
 
