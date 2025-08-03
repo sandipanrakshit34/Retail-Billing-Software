@@ -223,8 +223,8 @@ Admins and Users have access to a complete order history log.
 2. Update constants.js with your Razorpay key
 3. Run the React app:
    ```properties
-   npm install --save-dev ajv@^7
    npm install
+   npm install --save-dev ajv@^7
    npm run dev
    ```
 ## 🔐 AWS & Razorpay Integration
