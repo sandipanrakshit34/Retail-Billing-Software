@@ -185,12 +185,12 @@ Admins and Users have access to a complete order history log.
 1. Open the backend folder (billingsoftware) in IntelliJ IDEA or preferred IDE
 2. Add your AWS & Razorpay keys in application.properties `application.properties`:
    ```properties
-   aws.access.key=YOUR_AWS_KEY
-   aws.secret.key=YOUR_SECRET_KEY
-   aws.region=ap-south-1
-   aws.bucket.name=billing-software-scbushan05
-   razorpay.key=YOUR_RAZORPAY_KEY
-   razorpay.secret=YOUR_RAZORPAY_SECRET
+   aws.access.key= {YOUR_AWS_KEY}
+   aws.secret.key= {YOUR_SECRET_KEY}
+   aws.region= {ap-south-1}
+   aws.bucket.name= {Your-bucket-name}
+   razorpay.key= {YOUR_RAZORPAY_KEY}
+   razorpay.secret= {YOUR_RAZORPAY_SECRET}
    ```
 3. Create a database:
    ```
